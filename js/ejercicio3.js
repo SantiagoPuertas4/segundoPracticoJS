@@ -7,10 +7,10 @@ let i = 0;
 
 do {
   cadena = prompt("Ingrese una cadena de texto");
-  if (cadena !== null) {
+  if (cadena !== null && cadena !== "") {
     i++;
     if (i > 1) {
-      texto = texto + "-" + cadena;
+      texto += `-${cadena}`;
     } else {
       texto = texto + cadena;
     }
