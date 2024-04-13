@@ -12,8 +12,6 @@ let num = 0;
 let max = 0;
 let piramide = 0;
 
-piramide = 0;
-
 max = prompt("Indique el tamaño de la piramide(2 a 50)");
 
 if (max === null) {
