@@ -19,4 +19,6 @@ do {
 
 if (i > 0) {
   alert(texto);
+} else {
+  alert("No se ingreso texto");
 }
