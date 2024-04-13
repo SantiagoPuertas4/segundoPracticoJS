@@ -10,12 +10,17 @@ let i = 0;
 do {
   num1 = parseInt(num1);
   num2 = prompt("Ingrese un numero a sumar");
-  if (num2 !== null) {
+
+  if (num2 === null) {
+    break;
+  } else if (isNaN(num2)) {
+    alert("El valor ingresado no es un numero");
+  } else {
     num2 = parseInt(num2);
     i++;
     num1 = num1 + num2;
   }
-} while (num2 !== null);
+} while (true);
 
 if (i > 0) {
   alert(`La suma total es ${num1}`);
