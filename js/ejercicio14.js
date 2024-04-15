@@ -20,7 +20,7 @@ for (i = 0; i < cadena.length; i++) {
   if (i === 0) {
     cadenaRes = cadena.charAt(i);
   } else {
-    cadenaRes = cadenaRes + "-" + cadena.charAt(i);
+    cadenaRes += `-${cadena.charAt(i)}`;
   }
 }
 
