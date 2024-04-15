@@ -16,13 +16,17 @@ do {
 
 cadena = cadena.trim();
 
-for (i = 0; i < cadena.length; i++) {
-  if (i === 0) {
-    cadenaRes = cadena.charAt(i);
-  } else {
-    cadenaRes += `-${cadena.charAt(i)}`;
+if (cadena !== "") {
+  for (i = 0; i < cadena.length; i++) {
+    if (i === 0) {
+      cadenaRes = cadena.charAt(i);
+    } else {
+      cadenaRes += `-${cadena.charAt(i)}`;
+    }
   }
-}
 
-alert(cadena);
-alert(cadenaRes);
+  alert(cadena);
+  alert(cadenaRes);
+} else {
+  alert("No se ingreso nada");
+}

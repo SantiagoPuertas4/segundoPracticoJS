@@ -15,9 +15,13 @@ do {
 
 cadena = cadena.trim();
 
-for (i = 0; i < cadena.length + 1; i++) {
-  cadenaRes += `${cadena.charAt(cadena.length - i)}`;
-}
+if (cadena !== "") {
+  for (i = 0; i < cadena.length + 1; i++) {
+    cadenaRes += `${cadena.charAt(cadena.length - i)}`;
+  }
 
-alert(cadena);
-alert(cadenaRes);
+  alert(cadena);
+  alert(cadenaRes);
+} else {
+  alert("No se ingreso nada");
+}

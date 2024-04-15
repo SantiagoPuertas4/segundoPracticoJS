@@ -15,7 +15,11 @@ do {
 
 cadena = cadena.trim();
 
-cadenaMayus = cadena.toUpperCase();
+if (cadena !== "") {
+  cadenaMayus = cadena.toUpperCase();
 
-alert(cadena);
-alert(cadenaMayus);
+  alert(cadena);
+  alert(cadenaMayus);
+} else {
+  alert("No se ingreso nada");
+}
