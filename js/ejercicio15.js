@@ -17,8 +17,7 @@ do {
 cadena = cadena.trim();
 
 for (i = 0; i < cadena.length; i++) {
-  caracter = cadena.charAt(i);
-  caracter = caracter.toLowerCase();
+  caracter = cadena.charAt(i).toLowerCase;
   if (
     caracter === "a" ||
     caracter === "e" ||
@@ -29,9 +28,10 @@ for (i = 0; i < cadena.length; i++) {
     caracter === "é" ||
     caracter === "í" ||
     caracter === "ó" ||
-    caracter === "ú"
+    caracter === "ú" ||
+    caracter === "ü"
   ) {
-    num = num + 1;
+    num++;
   }
 }
 
