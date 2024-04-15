@@ -15,13 +15,20 @@ do {
 
   if (edad1 === null) {
     alert("No se ingreso nada");
-  } else if (isNaN(edad1)) {
-    alert("El valor ingresado no es valido");
-  } else if (edad1 < 0 || edad1 > 100) {
-    alert("Edad invalida");
-  } else {
-    break;
+    continue;
   }
+
+  if (isNaN(edad1)) {
+    alert("El valor ingresado no es valido");
+    continue;
+  }
+
+  if (edad1 < 0 || edad1 > 100) {
+    alert("Edad invalida");
+    continue;
+  }
+
+  break;
 } while (true);
 
 do {
@@ -39,13 +46,20 @@ do {
 
   if (edad2 === null) {
     alert("No se ingreso nada");
-  } else if (isNaN(edad2)) {
-    alert("El valor ingresado no es valido");
-  } else if (edad2 < 0 || edad2 > 100) {
-    alert("Edad invalida");
-  } else {
-    break;
+    continue;
   }
+
+  if (isNaN(edad2)) {
+    alert("El valor ingresado no es valido");
+    continue;
+  }
+
+  if (edad2 < 0 || edad2 > 100) {
+    alert("Edad invalida");
+    continue;
+  }
+
+  break;
 } while (true);
 
 do {
@@ -63,13 +77,20 @@ do {
 
   if (edad3 === null) {
     alert("No se ingreso nada");
-  } else if (isNaN(edad3)) {
-    alert("El valor ingresado no es valido");
-  } else if (edad3 < 0 || edad3 > 100) {
-    alert("Edad invalida");
-  } else {
-    break;
+    continue;
   }
+
+  if (isNaN(edad3)) {
+    alert("El valor ingresado no es valido");
+    continue;
+  }
+
+  if (edad3 < 0 || edad3 > 100) {
+    alert("Edad invalida");
+    continue;
+  }
+
+  break;
 } while (true);
 
 do {
@@ -84,11 +105,16 @@ do {
 
 edadMayor = Math.max(edad1, edad2, edad3);
 
-if (edadMayor == edad1) {
+edadMayor = Number(edadMayor);
+edad1 = Number(edad1);
+edad2 = Number(edad2);
+edad3 = Number(edad3);
+
+if (edadMayor === edad1) {
   alert(`El nombre del mayor es ${nombre1} y tiene ${edad1} años`);
-} else if (edadMayor == edad2) {
+} else if (edadMayor === edad2) {
   alert(`El nombre del mayor es ${nombre2} y tiene ${edad2} años`);
-} else if (edadMayor == edad3) {
+} else if (edadMayor === edad3) {
   alert(`El nombre del mayor es ${nombre3} y tiene ${edad3} años`);
 } else {
   alert("Error en la comparacion final");

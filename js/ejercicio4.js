@@ -3,27 +3,27 @@
 Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
  */
 
+let suma = 0;
 let num1 = 0;
-let num2 = 0;
 let i = 0;
 
 do {
-  num1 = parseInt(num1);
-  num2 = prompt("Ingrese un numero a sumar");
+  suma = parseInt(suma);
+  num1 = prompt("Ingrese un numero a sumar");
 
-  if (num2 === null) {
+  if (num1 === null) {
     break;
-  } else if (isNaN(num2)) {
+  } else if (isNaN(num1)) {
     alert("El valor ingresado no es un numero");
   } else {
-    num2 = parseInt(num2);
+    num1 = parseInt(num1);
     i++;
-    num1 = num1 + num2;
+    suma = suma + num1;
   }
 } while (true);
 
 if (i > 0) {
-  alert(`La suma total es ${num1}`);
+  alert(`La suma total es ${suma}`);
 } else {
   alert("No se ingresaron numeros");
 }

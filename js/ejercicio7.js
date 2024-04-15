@@ -10,9 +10,7 @@
 
 let num = 0;
 let max = 0;
-let piramide = 0;
-
-piramide = 0;
+let piramide = false;
 
 max = prompt("Indique el tamaño de la piramide inversa(2 a 50)");
 
@@ -23,10 +21,10 @@ if (max === null) {
 } else if (max > 50 || max < 2) {
   alert("Valor fuera de rango");
 } else {
-  piramide = 1;
+  piramide = true;
 }
 
-if (piramide === 1) {
+if (piramide === true) {
   num = max;
 
   for (let i = max; i > 0; i--) {
