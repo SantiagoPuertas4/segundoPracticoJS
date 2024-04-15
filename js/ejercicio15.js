@@ -16,23 +16,34 @@ do {
 
 cadena = cadena.trim();
 
-for (i = 0; i < cadena.length; i++) {
-  caracter = cadena.charAt(i).toLowerCase;
-  if (
-    caracter === "a" ||
-    caracter === "e" ||
-    caracter === "i" ||
-    caracter === "o" ||
-    caracter === "u" ||
-    caracter === "á" ||
-    caracter === "é" ||
-    caracter === "í" ||
-    caracter === "ó" ||
-    caracter === "ú" ||
-    caracter === "ü"
-  ) {
-    num++;
+if (cadena !== "") {
+  for (i = 0; i < cadena.length; i++) {
+    caracter = cadena.charAt(i);
+    caracter = caracter.toLowerCase();
+    if (
+      caracter === "a" ||
+      caracter === "e" ||
+      caracter === "i" ||
+      caracter === "o" ||
+      caracter === "u" ||
+      caracter === "á" ||
+      caracter === "é" ||
+      caracter === "í" ||
+      caracter === "ó" ||
+      caracter === "ú" ||
+      caracter === "ü"
+    ) {
+      num = num + 1;
+    }
   }
-}
 
-alert(`La cantidad de vocales que tiene el texto es ${num}`);
+  if (num === 0) {
+    alert("El texto ingresado no tiene vocales");
+  } else if (num === 1) {
+    alert("El texto ingresado tiene 1 vocal");
+  } else {
+    alert(`El texto ingresado tiene ${num} vocales`);
+  }
+} else {
+  alert("No se ingreso nada");
+}
