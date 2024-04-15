@@ -1,6 +1,6 @@
 //15- Realiza un script que cuente el número de vocales que tiene un texto.
 
-let cadena = "hola que tal";
+let cadena = "";
 let caracter = "";
 let num = 0;
 

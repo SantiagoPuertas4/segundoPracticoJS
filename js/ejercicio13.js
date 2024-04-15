@@ -1,6 +1,6 @@
 //13- Realiza un script que pida un texto y lo muestre en mayúsculas.
 
-let cadena = "hola que tal";
+let cadena = "";
 let cadenaMayus = "";
 
 do {
@@ -17,4 +17,5 @@ cadena = cadena.trim();
 
 cadenaMayus = cadena.toUpperCase();
 
+alert(cadena);
 alert(cadenaMayus);
